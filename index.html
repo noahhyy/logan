@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Noah - Ophraxx</title>
+
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background: black;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container (glass card) */
+.container {
+  width: 330px;
+  padding: 2rem 1.5rem;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  text-align: center;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Profile Image */
+.profile-image-container {
+  width: 96px;
+  height: 96px;
+  margin: auto;
+  position: relative;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Username */
+.username {
+  margin-top: 0.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Tagline */
+.tagline {
+  margin-top: 0.3rem;
+  font-style: italic;
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+/* About text */
+.about {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Quote */
+.quote {
+  margin-top: 1.4rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #ddd;
+  border-left: 4px solid #fff;
+  padding-left: 12px;
+  text-align: left;
+}
+
+/* Music player */
+.music-player {
+  margin-top: 1.8rem;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Profile Image -->
+  <div class="profile-image-container">
+    <img src="https://cdn.discordapp.com/avatars/586406624122372096/6f36ce5cd7313e80232259a3a51988fc.webp?size=80" alt="Ophraxx Logo" class="profile-image" />
+  </div>
+
+  <!-- Username -->
+  <h1 class="username">Logan</h1>
+
+  <!-- Tagline -->
+  <p class="tagline">Founder | Front End Developer </p>
+
+  <!-- About -->
+  <p class="about">
+    Hello, my name is Logan Hewitt. I am the proud founder and front-end developer of https://yllabs.xyz/ I am a huge trump supporter and I am learning how to become a politician.
+  </p>
+
+  <!-- Quote -->
+  <blockquote class="quote">
+  ""I would rather spend one lifetime with you, than face all the ages of this world alone.""
+  </blockquote>
+
+  <!-- Music Player -->
+  <audio controls class="music-player">
+    <source src="music/theme.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+</div>
+
+</body>
+</html>
